@@ -1,0 +1,158 @@
+.modal-overlay_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    width: 100%;
+}
+
+.wallet-login_modal {
+    background-color: #000000;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 550px;
+    height: auto; /* Set to auto for responsive height */
+    padding: 1rem 3rem 3rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.close_modal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.close_modal h2{
+    color: white;
+}
+.close-btn_modal {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #e5e5e5;
+    text-align: end;
+    padding: 0;
+}
+
+.close-btn_modal:hover {
+    color: #333;
+}
+
+.login-options_modal {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    margin-bottom: 20px; /* Space below the login options */
+    padding-bottom: 10px; /* Space for the scrollbar */
+    gap: 1rem; /* Space between wallet options */
+}
+
+.wallet-option_modal {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    background: #000000;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.wallet-option_modal:hover {
+    background-color: #232323;
+}
+
+.icon_modal {
+    width: 40px;
+    height: 40px;
+    /* Center icon */
+   
+}
+
+.login-input_modal {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    text-align: start;
+  
+}
+
+.login-input_modal:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+.login-btn_modal {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    cursor: pointer;
+    text-align: start;
+    transition: background-color 0.3s;
+}
+
+.login-btn_modal:hover {
+    background-color: #0056b3;
+}
+
+.divider {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #666;
+    text-align: center; /* Center the divider */
+}
+
+.connect-wallet-btn_modal {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #28a745; /* Green for connect button */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 auto;
+}
+
+.connect-wallet-btn_modal:hover {
+    background-color: #218838; 
+    margin: auto 0;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .wallet-login_modal {
+        width: 90%;
+        padding: 15px;
+    }
+}

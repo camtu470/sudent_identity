@@ -1,0 +1,140 @@
+.balance-card {
+    border: 2px solid #14126e;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  
+  .balance-header {
+    display: flex;
+    font-size: 14px;
+    gap: 10px;
+  }
+  
+  .assent_balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    width: 100%;
+  }
+  
+  .balance-amount h1 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .percentage-changes {
+    display: flex;
+    gap: 20px; 
+  }
+  
+  .percent-item {
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  .percent-item span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .percent-up {
+    color: #4CAF50;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .percent-down {
+    color: #F44336;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  
+  .deposit-btn,
+  .transfer-btn,
+  .withdraw-btn
+   {
+    background-color: #373598;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    width: 80px;
+  }
+  
+  .deposit-btn,
+  .transfer-btn,
+  .withdraw-btn:hover {
+    background-color: #272579;
+  }
+  .buttons-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+  }
+  
+  .deposit-btn,
+  .transfer-btn,
+  .withdraw-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .deposit-btn svg,
+  .transfer-btn svg,
+  .withdraw-btn svg {
+    margin-right: 8px;
+    font-size: 24px;
+  }
+  
+  .deposit-btn {
+    background-color: #4CAF50;
+  }
+  
+  .deposit-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .transfer-btn {
+    background-color: #373598;
+  }
+  
+  .transfer-btn:hover {
+    background-color: #2f2c7c;
+  }
+  
+  .withdraw-btn {
+    background-color: #F44336;
+  }
+  
+  .withdraw-btn:hover {
+    background-color: #e53935;
+  }
+  

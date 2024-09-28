@@ -1,0 +1,81 @@
+.slider-container {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  padding: 20px 10px;
+  background: rgb(241, 241, 241);
+  justify-content: space-between;
+}
+
+.pre,
+.next {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_slider {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.slider-wrap {
+  overflow: hidden;
+  width: calc(100% - 100px); /* 100% width minus space for prev/next buttons */
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider-card {
+  flex: 0 0 calc(25% - 10px); /* 4 cards visible at a time, accounting for gaps */
+  margin: 0 5px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.slider-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-details {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name_card {
+  display: flex;
+  gap: 5px;
+}
+
+.detail_card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.floor_card,
+.total_volume {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.floor_card p,
+.total_volume p {
+  font-size: 14px;
+  color: #515151;
+}
+
+.floor_card h3,
+.total_volume h3 {
+  font-size: 14px;
+}
